@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/abc_action_bar_overflow_padding_end_material">
+
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New CheckBox"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/lblListItem" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="編輯"
+        android:id="@+id/edit"
+        android:layout_toLeftOf="@+id/del"
+        android:layout_alignBottom="@+id/lblListItem"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        android:paddingRight="@dimen/abc_action_bar_overflow_padding_end_material" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="刪除"
+        android:id="@+id/del"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        android:layout_alignBottom="@+id/lblListItem"
+        android:paddingRight="@dimen/abc_action_bar_overflow_padding_end_material" />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="新增緊急任務"
+            android:gravity="center"
+            android:id="@+id/addTodoName"
+            android:padding="@dimen/abc_action_bar_content_inset_material" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="任務名稱"
+            android:padding="@dimen/abc_action_bar_overflow_padding_end_material" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/todoTaskName"
+            android:singleLine="true"
+            android:padding="@dimen/abc_action_bar_overflow_padding_end_material" />
+<!--version 2-->
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="@dimen/abc_action_bar_overflow_padding_end_material"-->
+            <!--android:text="期限" />-->
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/deadline"-->
+            <!--android:inputType="none"-->
+            <!--android:editable="false"/>-->
+    </LinearLayout>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/confirm"
+        app:pressedTranslationZ="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>

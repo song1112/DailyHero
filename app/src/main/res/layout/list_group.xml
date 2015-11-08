@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#009FCC"
+    android:padding="@dimen/abc_action_bar_overflow_padding_start_material">
+
+
+
+    <TextView
+        android:id="@+id/lblListHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

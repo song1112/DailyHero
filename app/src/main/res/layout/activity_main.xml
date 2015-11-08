@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f4f4f4">
+
+    <RelativeLayout
+        android:id="@+id/role_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+
+        android:padding="@dimen/abc_action_bar_content_inset_material">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/test"
+            android:id="@+id/hero"
+            android:layout_alignParentTop="true" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Point:100"
+            android:id="@+id/hero_point"
+            android:layout_toRightOf="@+id/hero"
+            android:paddingLeft="@dimen/abc_action_bar_content_inset_material"
+            android:layout_alignBottom="@id/hero"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="稱號：永遠粗心者"
+            android:id="@+id/hero_sign"
+            android:layout_toRightOf="@+id/hero"
+            android:paddingLeft="@dimen/abc_action_bar_content_inset_material"
+            android:layout_above="@id/hero_point"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/role_info">
+
+        <ExpandableListView
+            android:id="@+id/lvExp"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"/>
+
+        </LinearLayout>
+
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/add_main_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main"
+            fab:fab_label="新增主線"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="#00AA88"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/add_br_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main"
+            fab:fab_size="mini"
+            fab:fab_label="新增支線"
+            fab:fab_colorNormal="#00AA88"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/add_todo_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main"
+            fab:fab_size="mini"
+            fab:fab_label="新增緊急"
+            fab:fab_colorNormal="#00AA88"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</RelativeLayout>
