@@ -18,7 +18,7 @@ public class TaskDB extends SQLiteOpenHelper {
                     + "_ID INTEGER PRIMARY KEY,"
                     + "TASK_TYPE TEXT,"
                     + "TASK_NAME TEXT,"
-                    + "TIME TEXT";
+                    + "TIME TEXT)";
     // 刪除資料表
     private static final String DELETE_DDL =
             "DROP TABLE IF EXISTS TASK;";
